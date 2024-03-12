@@ -9,3 +9,23 @@ h5,
 h6 {
     font-family: $font-family-header;
 }
+
+// styles for product-advisor section
+// .product-advisor {
+    
+// }
+
+// .wave-border {
+//     @include background-image('../images/wave-blue-dark.png', 100% auto, no-repeat);
+// }
+
+.dropdowns {
+    @include flexbox(column);
+}
+
+img {
+    // width: 10rem;
+    justify-self: end;
+    padding: 1.5rem 0 1.5rem 0.5rem;
+  }
+
