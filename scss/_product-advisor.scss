@@ -1,0 +1,50 @@
+@use "variables" as *;
+
+.product-advisor {
+    width: $product-advisor-width;
+    height: $product-advisor-height;
+    background-color: $product-advisor-background-color;
+    margin: 0 $product-advisor-margin;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dropdowns {
+            width: calc(100% - #{$product-advisor-margin * 2}); 
+            margin-top: 20px; /* Adjust as needed */
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                text-align: center; // Center the label text
+                color: white; // Set font color to white
+            }
+
+            select {
+                width: 100%;
+                // padding: 0 20px; // Adjust padding to set the height
+                height: 86px; // Set the height to 86 pixels
+                background-color: $dropdown-background-color;
+                color: $dropdown-text-color;
+                margin-bottom: 10px;
+        }
+
+        button#find-product-btn {
+            margin-top: 20px;
+            color: $font-background-white;
+            background-color: $background-light-blue;
+        }
+    }
+}
