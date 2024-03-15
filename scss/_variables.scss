@@ -2,12 +2,14 @@ $font-family-header: 'Roboto Condensed', sans-serif;
 $background-light-blue: #429bd6;
 $font-background-white: #ffffff;
 $font-black: #000000;
+$font-white: #ffffff;
 
 // product-advisor variables
-$product-advisor-width: 750px;
-$product-advisor-height: 1460px;
+// $product-advisor-width: 750px;
+// $product-advisor-height: 1460px;
 $product-advisor-background-color: #244a64;
 $product-advisor-margin: 20px;
 $dropdown-background-color: #bbbbbb;
 $dropdown-text-color: #646464;
 $product-advisor-text-height: 22px;
+$product-advisor-element-width: calc(100% - #{$product-advisor-margin * 2}); 
