@@ -1,0 +1,50 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.sign-up {
+    @include flexbox-create(flex, column, center, center);
+    width: 100%;
+    background-color: $sign-up-bg-color;
+    // margin:  0 $sign-up-margin;
+    padding:  3.25rem $sign-up-margin;
+  
+    // h2 {
+    //   margin-top: 52px;
+    //   margin-bottom: 36px;
+    // }
+
+    // .form-section {
+    //     width: calc(100% - #{$product-advisor-margin * 2}); 
+    //     @include flexbox-create(flex, row, center, center);
+    // }
+  
+    form {
+        @include flexbox-create(flex, row, center, center);
+        width: calc(100% - #{$product-advisor-margin * 2});
+    }
+  
+      input[type="email"] {
+        width: $email-input-width;
+        height: $sign-up-button-height;
+        padding: 0 10px;
+        margin-right: $sign-up-button-margin;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+  
+      button[type="submit"] {
+        width: $submit-button-width;
+        max-width: $max-submit-width;
+        height: $sign-up-button-height;
+        margin-top: $sign-up-button-margin;
+        background-color: $sign-up-button-color;
+        color: $sign-up-button-text-color;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  
