@@ -1,0 +1,50 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.about-us {
+    background-image: url('../images/bg-section-about-us.jpg');
+    background-size: cover;
+    height: 1130px;
+    background-size: auto 1130px; 
+    background-position: 50% 20%;
+    text-align: center;
+    color: $font-white;
+    padding-top: 324px;
+    
+    h1 {
+      margin-bottom: 66px;
+    }
+  }
+  
+  .about-us-content {
+    text-align: center;
+    padding: 0 155px;
+  }
+
+    p {
+        margin-top: 66px;
+    }
+  
+  .about-us-button {
+    text-align: center;
+    @include flexbox-create(flex, column, center, center);
+    padding-top: 4.125rem;
+  
+    .about-btn {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      width: 270px;
+      height: 86px;
+      padding: 10px 20px;
+      @include flexbox-create(flex, column, center, center);
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+  
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  

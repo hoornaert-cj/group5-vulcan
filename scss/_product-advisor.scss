@@ -4,16 +4,37 @@
     // width: $product-advisor-width;
     // height: $product-advisor-height;
     color: $font-white;
-    background-color: $product-advisor-background-color;
-    margin: $product-advisor-margin 0;
-    padding: 4rem 0 8.125rem 0;
+    // margin: $product-advisor-margin 0;
+    // padding: 0rem 0 8.125rem 0;
 
     h2 {
         text-align: center;
+        margin: 0;
     }
 
     p {
         text-align: center;
+    }
+
+    .product-wave {
+        position: relative;
+        height: 10.5rem;
+        top: 0;
+        left: -10%;
+        width: 155%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .products-container {
+        background-color: $product-advisor-background-color;
+        padding: 0rem 0 8.125rem 0;
     }
 
     form {
@@ -23,24 +44,23 @@
 
         .dropdowns {
             width: calc(100% - #{$product-advisor-margin * 2}); 
-            margin-top: 20px; /* Adjust as needed */
-            margin-bottom: 20px; /* Adjust as needed */
+            margin-top: 20px; 
+            margin-bottom: 20px; 
         }
 
             label {
                 display: block;
-                margin-bottom: 10px;
-                text-align: center; // Center the label text
-                color: white; // Set font color to white
+                margin-bottom: 1.625rem;
+                text-align: left;
+                color: $font-white; 
             }
 
             select {
                 width: 100%;
-                // padding: 0 20px; // Adjust padding to set the height
-                height: 86px; // Set the height to 86 pixels
+                height: 5.375rem;
                 background-color: $dropdown-background-color;
                 color: $dropdown-text-color;
-                margin-bottom: 10px;
+                margin-bottom: 3.0625rem;
         }
 
         button#find-product-btn {

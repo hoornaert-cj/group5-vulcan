@@ -6,31 +6,33 @@
     width: 100%;
     background-color: $sign-up-bg-color;
     // margin:  0 $sign-up-margin;
-    padding:  3.25rem $sign-up-margin;
-  
-    // h2 {
-    //   margin-top: 52px;
-    //   margin-bottom: 36px;
-    // }
+    padding-left: 20px;
 
-    // .form-section {
-    //     width: calc(100% - #{$product-advisor-margin * 2}); 
-    //     @include flexbox-create(flex, row, center, center);
-    // }
+
+      p {
+        font-size: 1.25rem;
+        color: $font-white;
+      }
+
+    .form-section {
+        width: 100%;
+        padding-bottom: 3.25rem;
+        max-width: 100%;
+        // margin-left:$product-advisor-margin;
+    }
   
     form {
         @include flexbox-create(flex, row, center, center);
-        width: calc(100% - #{$product-advisor-margin * 2});
+        // width: calc(100% - #{$product-advisor-margin * 2});
     }
   
       input[type="email"] {
         width: $email-input-width;
         height: $sign-up-button-height;
-        padding: 0 10px;
+        padding: 0.5rem 5rem 0.5rem 0.5rem;
         margin-right: $sign-up-button-margin;
         background-color: white;
         border: none;
-        border-radius: 5px;
         box-sizing: border-box;
       }
   
@@ -42,7 +44,6 @@
         background-color: $sign-up-button-color;
         color: $sign-up-button-text-color;
         border: none;
-        border-radius: 5px;
         font-size: 16px;
         cursor: pointer;
       }

@@ -6,6 +6,12 @@
 
 @use 'product-advisor' as *;
 @use 'sign-up' as *;
+@use 'about-us' as *;
+@use 'typography' as *;
+
+body {
+    font-family: $font-body;
+}
 
 h1,
 h2,
