@@ -1,5 +1,6 @@
 @use 'mixins' as *;
 @use 'variables' as *;
+@use 'product-advisor' as *;
 
 .about-us {
     background-image: url('../images/bg-section-about-us.jpg');
@@ -10,15 +11,22 @@
     text-align: center;
     color: $font-white;
     padding-top: 324px;
+    padding: 62px
     
     h1 {
       margin-bottom: 66px;
     }
   }
+
+  .about-us-header {
+    font-size: $font-size-large;
+    text-align: $centerTextAlign;
+  }
   
   .about-us-content {
-    text-align: center;
-    padding: 0 155px;
+  
+    text-align: $centerTextAlign;
+    font-size: $font-size-small;
   }
 
     p {

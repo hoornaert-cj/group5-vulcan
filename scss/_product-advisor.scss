@@ -1,15 +1,37 @@
 @use "variables" as *;
+// Font Family
+$font-family-header: 'Roboto Condensed', sans-serif; 
+$font-body: 'Roboto', sans-serif;
+
+//Text Alignment
+$centerTextAlign: center;
+
+// Font Sizes
+$font-size-base: 16px; // Base font size for the body
+
+$font-size-small: 0.875rem; // Small text size
+$font-size-medium: 1.375rem;    // Medium text size
+$font-size-large: 1.875rem;  // Large text size
+$font-size-xl: 2.1875rem;      // Extra large text size'
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
 
 .product-advisor {
-    // width: $product-advisor-width;
-    // height: $product-advisor-height;
     color: $font-white;
-    // margin: $product-advisor-margin 0;
-    // padding: 0rem 0 8.125rem 0;
+    font-family: $font-body;
+
 
     h2 {
+        font-size: 2.5rem;
+        text-transform: uppercase
+        font-weight 800;
         text-align: center;
         margin: 0;
+        padding-top: 4rem;
     }
 
     p {
@@ -55,12 +77,23 @@
                 color: $font-white; 
             }
 
+            // .dropdown {
+            //     width: 100%;
+            //     max-width: calc(100% - #{$product-advisor-margin * 2}); 
+            //     aspect-ratio: 710/86;
+            //     display: flex;
+            //     justify-content: center;
+            // }
+
             select {
+                // width: 100%;
+                // background-color: $dropdown-background-color;
+                // color: $dropdown-text-color;
+                // margin-bottom: 3.0625rem;
                 width: 100%;
-                height: 5.375rem;
-                background-color: $dropdown-background-color;
-                color: $dropdown-text-color;
-                margin-bottom: 3.0625rem;
+                aspect-ratio: 710/86;
+                display: flex;
+                justify-content: center;
         }
 
         button#find-product-btn {
@@ -72,3 +105,4 @@
         }
     }
 }
+

@@ -1,12 +1,16 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'product-advisor' as *;
 
 .sign-up {
     @include flexbox-create(flex, column, center, center);
     width: 100%;
     background-color: $sign-up-bg-color;
     // margin:  0 $sign-up-margin;
-    padding-left: 20px;
+    // padding-left: 20px;
+      h2 {
+        font-size: 32px;
+      }
 
 
       p {
