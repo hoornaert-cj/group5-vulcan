@@ -1,16 +1,15 @@
 @use 'mixins' as *;
-@use 'variables' as *;
+// @use 'variables' as *;
 @use 'media' as *;
 @use 'normalize-fwd.scss';
 
 
 @use 'product-advisor' as *;
-@use 'sign-up' as *;
 @use 'about-us' as *;
 @use 'typography' as *;
 
 body {
-    font-family: $font-body;
+    // font-family: $font-body;
 }
 
 h1,
@@ -19,5 +18,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family-header;
+    // font-family: $font-family-header;
 }
