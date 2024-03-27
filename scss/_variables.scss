@@ -1,1 +1,22 @@
-$font-family-header: 'Roboto Condensed', sans-serif; 
+@use "sass:math";
+
+$font-body: "Roboto", Arial, Helvetica, Verdana, sans-serif;
+$font-heading: "Roboto Condensed", Arial, Helvetica, Verdana, sans-serif; 
+$font-icon: "fontello", Arial, Helvetica, Verdana, sans-serif;
+
+$line-height: 1.5;
+
+// colors for customized 
+$blue-dark: #085074;
+$blue-light:#198fca;
+$gray-lightest: #BABABA;
+$gray-dark: #424242;
+$gray-darkest: #1F1F1F;
+
+// Media Query Breakpoints
+// $desktopLarge: em(1920);
+// $desktopMedium: em(1251);
+// $tabletLandscape: em(1024);
+// $tabletPortrait: 53.125em;
+// $phoneLandscape: em(670);
+// $phonePortrait: em(420);

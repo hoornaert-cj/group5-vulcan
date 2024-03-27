@@ -1,0 +1,41 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// .background{
+//     overflow-x: hidden;
+// }
+
+// .customized-background{
+//     position: absolute;
+//     max-width: none;
+//     width: 200vw;
+//     height: 80px;
+//     bottom: -0.5rem;
+//     left: -1rem;
+//     right: 0;
+// }
+
+// @media (min-width: $phonePortrait) {
+//     .customized-background{
+//         height: 6.25em;
+//     }
+// }
+// @media (min-width: 38.56em) {
+//     .customized-background{
+//         height: 7.5em;
+//     }
+// }
+// @media (min-width: $tabletPortrait) {
+//     .customized-background{
+//         height: auto;
+//         width: auto;
+//         max-width: 100%;
+//         left: 0;
+//         margin-left: 0;
+//     }
+// }
+// @media (min-width: 115.625em) {
+//     .customized-background{
+//        width: 100vw;
+//     }
+// }
