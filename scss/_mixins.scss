@@ -1,17 +1,5 @@
-// mixins
-
-//-------------------flexbox-related mixins------------------------------//
-@mixin flexbox($direction: row, $justify: flex-start, $align: stretch) {
+@mixin flexCenter {
     display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-  }
-
-// -------------------image-related mixins----------------------------- //
-// 
-@mixin background-image($image-url: null, $bg-size, $bg-repeat) {
-    background-image: url($image-url);
-    background-size:  $bg-size auto;
-    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
 }
