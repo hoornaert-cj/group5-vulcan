@@ -114,6 +114,32 @@ li {
   left: 0;
 }
 
+.hero .hero-text h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin: 3rem 1rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero .hero-text li {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+.hero .hero-text li .view-btn {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: #ffffff solid 2px;
+  font-size: 1rem;
+}
+
 @media (min-width: 850px) {
   .hamburger, #mobile-only, .mobile-logo {
     display: none;
