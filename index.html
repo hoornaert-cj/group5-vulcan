@@ -6,16 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vulcan</title>
     <!-- added the Google fonts shown in font-info.pdf--will need to be added to scss later -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;400i;500;700&display=swap">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
   
 </head>
 
 <body>
-    <header>
-        <section class="header-section">
-            <!-- header content goes here -->
+    <header class="header">
+        <div class="header-desktop">
+            <div class="header-left">
+                <li><a href="#">Install Map</a></li>
+                <li><a href="#">Product Literature</a></li>
+            </div>
+            <a href="#"><img src="./images/logo-white-vulcan.svg" alt="Vulcan logo"></a>
+            <div class="header-right">
+                <li><a href="#">+1 712-642-2755</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </div>
+        <div class="navigation">
+
+            <nav class="navbar">
+                <a class="mobile-logo" href="#"><img src="./images/logo-white-vulcan.svg" alt="Vulcan logo"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Parts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li id="mobile-only" class="nav-item"><a class="nav-link"  href="#">Installation Map</a></li>
+                    <li id="mobile-only" class="nav-item"><a class="nav-link"  href="#">Product Literature</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+
+        </div>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
+                <li><a class="view-btn" href="#">View Products</a></li>
+                <li><a class="view-btn" href="#">View Services</a></li>
+            </div>
+            <div class="carousel">
+
+            </div>
         </section>
+        <div class="white-wave">
+
+        </div>
     </header>
 
     <main>
@@ -87,52 +133,84 @@
         </section>
 
     <section class="product-advisor">
-	<!-- Product Advisor content goes here -->
-    <div class="wave-border">
-        <img src="images/wave-blue-dark.png" alt="a blue wave in the page">
-    </div>
-    <h2>Product Advisor</h2>
-        <p>Find your project's perfect fit.</p>
-        <form id="product-advisor-form">
-            <div class="dropdowns">
-                <label for="product-type dropdown">Product Type:</label>
-                <select class="product-type">
-                    <option value="">Select</option>
-                    <option value="1">Lorem Ipsum 1</option>
-                    <option value="2">Lorem Ipsum 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <label for="product-type dropdown">Screen Location:</label>
-                <select class="screen-location">
-                    <option value="">Select</option>
-                    <option value="1">Lorem Ipsum 1</option>
-                    <option value="2">Lorem Ipsum 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <label for="product-type dropdown">Flow Type:</label>
-                <select class="flow-type">
-                    <option value="">Select</option>
-                    <option value="1">Lorem Ipsum 1</option>
-                    <option value="2">Lorem Ipsum 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <label for="product-type dropdown">Channel Depth:</label>
-                <select class="channel-depth">
-                    <option value="">Select</option>
-                    <option value="1">Lorem Ipsum 1</option>
-                    <option value="2">Lorem Ipsum 2</option>
-                    <!-- Add more options as needed -->
-                </select>
-                <label for="product-type dropdown">Channel Width:</label>
-                <select class="channel-width">
-                    <option value="">Select</option>
-                    <option value="1">Lorem Ipsum 1</option>
-                    <option value="2">Lorem Ipsum 2</option>
-                    <!-- Add more options as needed -->
-                </select>
+        <!-- Product Advisor content goes here -->
+        <div class="product-wave">
+            <!-- <img src="images/wave-blue-light.png" alt="blue waves"> -->
+        <!-- </div>
+        <div class="products-container">
+            <h2>Product Advisor</h2>
+            <p>Find your project's perfect fit.</p>
+            <form id="product-advisor-form" class="prod-adv-form">
+                <div class="dropdowns">
+                    <div class="label-plus-dropdown">
+                        <label for="product-type">Product Type</label>
+                        <select class="product-type dropdown">
+                            <option value="">Select</option>
+                            <option value="1">Lorem Ipsum 1</option>
+                            <option value="2">Lorem Ipsum 2</option>
+                        </select>
+                    </div>
+                    <div class="label-plus-dropdown">
+                        <label for="product-type">Screen Location</label>
+                        <select class="screen-location dropdown">
+                            <option value="">Select</option>
+                            <option value="1">Lorem Ipsum 1</option>
+                            <option value="2">Lorem Ipsum 2</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+                    <div class="label-plus-dropdown">
+                        <label for="product-type">Flow Type</label>
+                        <select class="flow-type dropdown">
+                            <option value="">Select</option>
+                            <option value="1">Lorem Ipsum 1</option>
+                            <option value="2">Lorem Ipsum 2</option>
+                        </select>
+                    </div>
+                    <div class="label-plus-dropdown">
+                        <label for="product-type">Channel Depth</label>
+                        <select class="channel-depth dropdown">
+                            <option value="">Select</option>
+                            <option value="1">Lorem Ipsum 1</option>
+                            <option value="2">Lorem Ipsum 2</option>
+                        </select>
+                    </div>
+                    <div class="label-plus-dropdown">
+                        <label for="product-type ">Channel Width</label>
+                        <select class="channel-width dropdown">
+                            <option value="">Select</option>
+                            <option value="1">Lorem Ipsum 1</option>
+                            <option value="2">Lorem Ipsum 2</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="find-product-btn" class="product-advisor-button">Find My Product</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="about-us">
+        <h2>Delivering Clean, Safe Water Since 1975. Refreshing Indeed.</h2>
+        <p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900
+          cities and communities throughout the world.</p>
+        <button>About Us</button>
+      </section>
+
+    <section class="media">
+        <div class="media-container">
+            <div class="video-wrapper">
+                <iframe src="https://player.vimeo.com/video/183929811" title="Vulcan Industries" allowfullscreen></iframe>
             </div>
-            <button type="submit" id="find-product-btn">Find My Product</button>
+        </div>
+      </section>
+
+      <section class="sign-up">
+        <p>Stay in the know. Sign up for our newsletter.</p>
+        <form>
+            <input type="email" class="email" placeholder="Enter your email">
+            <input type="submit" class="submit"> 
         </form>
+        <!-- sign up content goes here -->
     </section>
 
         <section class="about-us">
@@ -182,6 +260,9 @@
     <footer>
         <!-- footer content goes here -->
     </footer>
+
+    <script src="./script/hamburger.js"></script>
+
 </body>
 
 </html>
