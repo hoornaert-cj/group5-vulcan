@@ -1,3 +1,6 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
 body {
     font-family: 'Roboto', sans-serif;
 }
