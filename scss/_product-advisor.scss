@@ -1,0 +1,260 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.product-advisor {
+    width: auto;
+    background-color: #154a66;
+    color: #ffffff;
+  }
+
+    .product-advisor h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.25rem;
+        padding-top: 4rem;
+        letter-spacing: -0.125rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1.25rem 0 2.375rem 0;
+    }
+
+
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .prod-adv-form {
+    width: calc(100% - 40px);
+  }
+  
+
+  .dropdowns {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    /* padding-left: 0.625rem; */
+    border-top: 2px solid #ffffff;
+    padding-top: 1.8rem;
+  }
+
+  .label-plus-dropdown {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .dropdowns label {
+    margin-left: 0;
+    font-size: 1.4375rem;
+    font-weight: 700;
+  }
+
+  
+  .dropdowns select {
+    font-size: 1rem;
+    color: #64646c;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/down-arrow.png) no-repeat right #bbbbbb;
+    background-size: 1.25rem;
+    background-position: right 1.875rem center;
+  }
+
+
+  .dropdown:hover  {
+    background-color: #edeeee;
+  }
+
+  .dropdowns option {
+    padding: 1.85rem;
+    box-sizing: border-box; 
+  }
+
+  
+  .product-advisor-button {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%; 
+    padding: 1.7rem 0;
+    margin: 2.25rem 0 6.125rem 0;
+    background-color: #429bd6;
+    border: none;
+  }
+
+
+  .label-plus-dropdown label {
+    padding-bottom: 0.5rem; 
+}
+
+.label-plus-dropdown select {
+    margin: 1.625rem 0 3em 0;
+}
+
+  @media screen and (min-width: 41.875em) {
+
+    .dropdowns label {
+      font-size: 1.375rem;
+    }
+    .dropdowns select {
+      font-size: 1.375rem;
+      padding: 1.85rem;
+    }
+  }
+
+
+   @media screen and (min-width: 53.125em) {
+    .product-advisor h2 {
+      font-size: 2.8125rem;
+    }
+
+    .product-advisor p {
+      font-size: 2rem;
+      margin: 0;
+      padding: 2.625rem;
+      color: #429bd6;
+      font-weight: 700;
+    }
+
+    .dropdowns label {
+      font-size: 1.375rem;
+    }
+
+    .products-container {
+      margin: 0 3rem;
+    }
+
+    .dropdowns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  
+    label:nth-of-type(1) {
+      grid-column: 1; 
+      grid-row: 1; 
+    }
+  
+    select:nth-of-type(1) {
+      grid-column: 1; 
+      grid-row: 2; 
+    }
+  
+    label:nth-of-type(2) {
+      grid-column: 2; 
+      grid-row: 1; 
+    }
+  
+    select:nth-of-type(2) {
+      grid-column: 2; 
+      grid-row: 2; 
+    }
+  
+    label:nth-of-type(3) {
+      grid-column: 1; 
+      grid-row: 3; 
+    }
+  
+    select:nth-of-type(3) {
+      grid-column: 1; 
+      grid-row: 4; 
+    }
+  
+    label:nth-of-type(4) {
+      grid-column: 2; 
+      grid-row: 3; 
+    }
+  
+    select:nth-of-type(4) {
+      grid-column: 2;
+      grid-row: 4; 
+    }
+  
+    label:nth-of-type(5) {
+      grid-column: 1; 
+      grid-row: 5; 
+    }
+  
+    select:nth-of-type(5) {
+      grid-column: 1; 
+      grid-row: 6; 
+    }
+
+      /* Exclude the button from the grid */
+  .find-product-btn {
+    grid-column: 1 / span 2; 
+    grid-row: 5;
+    width: auto; 
+    margin-top: 20px;
+  }
+  }
+
+  /* 1250pixels */
+  @media screen and (min-width: 78.125em) {
+
+    .product-advisor h2 {
+      font-size: 4.375rem;
+    }
+
+    .dropdowns {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .label-plus-dropdown {
+      flex: 1 0 15%; 
+      display: flex;
+      flex-direction: column;
+    }
+  
+
+    select {
+      width: 100%; 
+    }
+
+    .dropdowns label {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .product-advisor-button {
+      margin: 1.375rem 0 9.75rem 0;
+      font-size: 2rem;
+    }
+    
+  }
+
+  /* 1920 pixels */ 
+  @media screen and (min-width: 120em) {
+    .dropdowns label {
+      font-size: 1.75rem;
+    }
+
+    .product-advisor-button {
+      margin: 1.375rem 0 9.75rem 0;
+      font-size: 2.5rem;
+    }
+  }
+
+  

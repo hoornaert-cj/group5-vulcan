@@ -1,0 +1,39 @@
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #429bd6;
+  width: 100%;
+}
+
+.media-container {
+  position: relative;
+  width: 100%;
+  max-width: 65%;
+  height: auto;
+  padding: 7.5rem 0;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  overflow: hidden; 
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left:2.5%;
+  background-color: #367d22;
+  width: 95%;
+  height: 100%;
+  border: 1.875rem solid #244a64;
+}
+
+@media screen and (min-width: 53.125) { 
+  .video-wrapper {
+      padding-bottom: 35.56%; 
+  }
+}
+

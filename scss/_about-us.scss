@@ -1,0 +1,143 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-us {
+  background-image: url('../images/bg-section-about-us.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-us h2 {
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 8rem 1rem 0rem;
+  font-size: 1.5rem;
+  max-width: 90%;
+}
+
+.about-us p {
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 3.5rem 1rem 5rem;
+  font-weight: 400;
+  max-width: 80%;
+}
+
+button {
+  font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    // margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  @media (min-width: 41.875em)
+  {   
+  .about-us h2 {
+  padding: 16rem 0rem 0rem;
+  font-size: 2.5em;
+  max-width: 75%;
+  }
+
+  .about-us p {
+      font-size: 1.4rem;
+      max-width: 55%;
+  }
+
+  button {
+      font-size: 1.8rem;
+      margin-bottom: 11.5rem;
+      padding: 1.5rem 3.25rem;
+  }
+}
+
+@media (min-width: 53.125em){
+  .about-us h2{
+      font-size: 2.75rem;
+      /* padding: 14rem 3rem 1rem; */
+      max-width: 75%;
+  }
+
+  .about-us-content p{
+      font-size: 1.375rem;
+      line-height: 1.2rem;
+      padding: 2rem 9rem 3rem;
+      max-width: 70%;
+  }
+
+  button{
+      padding: 1.2rem 5rem; 
+      margin-bottom: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 78.125em) {
+  .about-us h2{
+      padding: 12.25rem 3rem 1rem;
+      font-size: 3.25rem;
+      max-width: 85%;
+  }
+
+  .about-us p{
+      font-size: 2rem;
+      padding: 2.5rem 6em 10rem;
+      max-width: 90%;
+  }
+
+  button {
+      font-size: 1.75rem;
+      margin-bottom: 12rem;
+  }
+}
+
+@media (min-width: 120em){ 
+  .about-us h2{
+      padding: 15.8125rem 5rem 8rem;
+      font-size: 5rem;
+      max-width: 65%;
+  }
+
+  .about-us p{
+      font-size: 1.9rem;
+      padding: 1rem 5rem 10rem;
+      max-width: 60%;
+  }
+
+  button{
+      font-size: 1.75rem;
+      padding: 1.5rem 7.7rem; 
+      margin-bottom: 17rem;
+  }
+}
+
+
+@media (min-width: 160em)  {
+  .about-us h2{
+      font-size: 7rem;
+      max-width: 55%;
+  }
+
+  .about-us p{
+      font-size: 1.9rem;
+      padding: 1rem 5rem 10rem;
+      max-width: 50%;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+}
