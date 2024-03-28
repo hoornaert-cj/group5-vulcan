@@ -1,9 +1,11 @@
 @use "variables" as *;
 
 footer {
-    background-color: red;
+    background-color: #009DDC;
     padding-top: 1.3rem;
     padding-bottom: 1px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #footer-logo {
@@ -11,3 +13,33 @@ footer {
     width: 100px;
 }
 
+.url-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+
+    li {
+        margin: 0 10px;
+        list-style: none;
+        a {
+            color: white;
+        }
+    }
+}
+
+.url-menu ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  footer p {
+        font-weight: medium;
+        text-transform: uppercase;
+        color: white;
+    }
