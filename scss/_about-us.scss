@@ -19,26 +19,27 @@ h1,h2,h3,h4 {
   margin: 0 auto;
   padding: 8rem 1rem 0rem;
   font-size: 1.5rem;
-  max-width: 90%;
+  max-width: 79%;
+  text-transform: uppercase;
 }
 
 .about-us p {
   color: #ffffff;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 3.5rem 1rem 5rem;
-  font-weight: 400;
+  font-weight: 500;
   max-width: 80%;
 }
 
 button {
-  font-size: 1.5rem;
+  font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.9rem 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
     // margin: 0 auto;
@@ -48,8 +49,8 @@ button {
   @media (min-width: 41.875em)
   {   
   .about-us h2 {
-  padding: 16rem 0rem 0rem;
-  font-size: 2.5em;
+  padding: 15rem 0rem 0rem;
+  font-size: 2rem;
   max-width: 75%;
   }
 
@@ -59,7 +60,7 @@ button {
   }
 
   button {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       margin-bottom: 11.5rem;
       padding: 1.5rem 3.25rem;
   }
@@ -134,7 +135,7 @@ button {
   .about-us p{
       font-size: 1.9rem;
       padding: 1rem 5rem 10rem;
-      max-width: 50%;
+      max-width: 45%;
   }
 
   button {
