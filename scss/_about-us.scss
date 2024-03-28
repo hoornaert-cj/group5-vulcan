@@ -20,6 +20,7 @@ h1,h2,h3,h4 {
   padding: 8rem 1rem 0rem;
   font-size: 1.5rem;
   max-width: 90%;
+  text-transform: uppercase;
 }
 
 .about-us p {
@@ -127,8 +128,8 @@ button {
 
 @media (min-width: 160em)  {
   .about-us h2{
-      font-size: 7rem;
-      max-width: 55%;
+      font-size: 6rem;
+      max-width: 60%;
   }
 
   .about-us p{

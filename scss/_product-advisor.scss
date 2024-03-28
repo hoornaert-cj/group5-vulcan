@@ -15,9 +15,10 @@ h1,h2,h3,h4 {
     .product-advisor h2 {
         margin: 0;
         padding: 0;
-        font-size: 2.25rem;
+        font-size: 2rem;
         padding-top: 4rem;
-        letter-spacing: -0.125rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
     }
 
     p {
@@ -91,12 +92,12 @@ h1,h2,h3,h4 {
   
   .product-advisor-button {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     width: 100%; 
-    padding: 1.7rem 0;
-    margin: 2.25rem 0 6.125rem 0;
+    padding: 1rem 0;
+    margin: 1.5rem 0 6.125rem 0;
     background-color: #429bd6;
     border: none;
   }
@@ -116,21 +117,21 @@ h1,h2,h3,h4 {
       font-size: 1.375rem;
     }
     .dropdowns select {
-      font-size: 1.375rem;
-      padding: 1.85rem;
+      font-size: 1.2rem;
+      padding: 1.2rem;
     }
   }
 
 
    @media screen and (min-width: 53.125em) {
-    .product-advisor h2 {
-      font-size: 2.8125rem;
-    }
+    // .product-advisor h2 {
+    //   font-size: 2.8125rem;
+    // }
 
     .product-advisor p {
-      font-size: 2rem;
+      font-size: 1.2rem;
       margin: 0;
-      padding: 2.625rem;
+      padding:1rem;
       color: #429bd6;
       font-weight: 700;
     }
@@ -211,9 +212,9 @@ h1,h2,h3,h4 {
   /* 1250pixels */
   @media screen and (min-width: 78.125em) {
 
-    .product-advisor h2 {
-      font-size: 4.375rem;
-    }
+    // .product-advisor h2 {
+    //   font-size: 2rem;
+    // }
 
     .dropdowns {
       display: flex;
@@ -240,7 +241,7 @@ h1,h2,h3,h4 {
 
     .product-advisor-button {
       margin: 1.375rem 0 9.75rem 0;
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
     
   }
@@ -248,12 +249,12 @@ h1,h2,h3,h4 {
   /* 1920 pixels */ 
   @media screen and (min-width: 120em) {
     .dropdowns label {
-      font-size: 1.75rem;
+      font-size: 1.25rem;
     }
 
     .product-advisor-button {
       margin: 1.375rem 0 9.75rem 0;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
   }
 
