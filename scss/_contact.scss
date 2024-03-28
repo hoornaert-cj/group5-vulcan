@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .spec-and-install {
     background-image: url(/images/map.jpg);
