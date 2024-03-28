@@ -164,10 +164,10 @@ li {
 .header {
     position: relative;
     z-index: 1;
+    display: block;
 }
 
 .carousel-section {
-    display: block;
     .carousel {
         position: absolute;
         top: 0;
@@ -178,6 +178,10 @@ li {
         }
         .carousel-item-selected {
             display: block;
+            img {
+                object-fit: none;
+
+            }
         }
         .carousel-nav {
             width: 100%;
@@ -201,7 +205,6 @@ li {
         }
     }
 }
-
 
 
 
