@@ -1,8 +1,12 @@
+@use 'product-advisor' as *;
+@use 'mixins' as *;
+
 .media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #429bd6;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flexCenter;
+  background-color: $midBlue;
   width: 100%;
 }
 
@@ -25,15 +29,16 @@ iframe {
   position: absolute;
   top: 0;
   left:2.5%;
-  background-color: #367d22;
+  background-color: $mediaBackground;
   width: 95%;
   height: 100%;
-  border: 1.875rem solid #244a64;
+  border: 0.75rem solid $darkBlue;
 }
 
-@media screen and (min-width: 53.125) { 
-  .video-wrapper {
-      padding-bottom: 35.56%; 
+@media screen and (min-width: 53.125em) { 
+
+  iframe {
+    border: 1rem solid $darkBlue;
   }
 }
 

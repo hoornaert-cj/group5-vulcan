@@ -8,34 +8,57 @@ body {
 h1,h2,h3,h4 {
     font-family: 'Roboto Condensed', sans-serif;
 }
+// font weights
+$w400: 400;
+$w500: 500;
+ $w700: 700;
+
+$font-body: "Roboto", Arial, Helvetica, Verdana, sans-serif;
+$font-heading: "Roboto Condensed", Arial, Helvetica, Verdana, sans-serif; 
+$font-icon: "fontello", Arial, Helvetica, Verdana, sans-serif;
+
+$line-height: 1.5;
+
+// colors for customized 
+$lightBlue: #bddbee;
+$midBlue: #429bd6;
+$darkBlue: #154a66;
+$white: #FFFFFF;
+$darkWhite: #edeeee;
+$gray-lightest: #BABABA;
+$gray-light: #737373;
+$gray-mid: #616161;
+$gray-dark: #424242;
+$gray-darkest: #1F1F1F;
+$mediaBackground: #367d22;
 
 .product-advisor {
     width: auto;
-    background-color: #154a66;
-    color: #ffffff;
+    background-color:$darkBlue;
+    color:$white;
   }
 
-    .product-advisor h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 2rem;
-        padding-top: 2rem;
-        letter-spacing: -0.125rem;
-        text-transform: uppercase;
-    }
+  .product-advisor h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    letter-spacing: -0.125rem;
+    text-transform: uppercase;
+}
 
-    p {
-        font-size: 1rem;
-        font-weight: 500;
-        text-align: center;
-        padding: 1.25rem 0 2.375rem 0;
-    }
+.product-advisor p {
+    font-size: 1rem;
+    font-weight: $w500;
+    text-align: center;
+    padding: 1.25rem 0 2.375rem 0;
+}
 
 
   .products-container {
-    display: flex;
+    // display: flex;
+    @include flexCenter;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     margin: 0 auto;
   }
 
@@ -49,19 +72,21 @@ h1,h2,h3,h4 {
     flex-direction: column; 
     align-items: flex-start;
     /* padding-left: 0.625rem; */
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid $white;
     padding-top: 1.8rem;
   }
 
   .label-plus-dropdown {
     text-align: left;
     width: 100%;
+    margin-bottom: 1rem;
   }
   
   .dropdowns label {
     margin-left: 0;
-    font-size: 1rem;
+    font-size: 0.9em;
     font-weight: 700;
+    line-height: $line-height;
   }
 
   
@@ -71,20 +96,20 @@ h1,h2,h3,h4 {
     font-weight: 700;
     width: 100%;
     max-width: 100%;
-    padding: 1.2rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
     box-sizing: border-box; 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(../images/down-arrow.png) no-repeat right #bbbbbb;
+    background: url(../images/down-arrow.png) no-repeat right #BABABA;
     background-size: 1.25rem;
     background-position: right 1.875rem center;
   }
 
 
   .dropdown:hover  {
-    background-color: #edeeee;
+    background-color: $darkWhite;
   }
 
   .dropdowns option {
@@ -94,68 +119,62 @@ h1,h2,h3,h4 {
 
   
   .product-advisor-button {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 500;
+    color: $white;
+    font-size: 1rem;
+    font-weight: $w500;
     text-transform: uppercase;
     width: 100%; 
-    padding: 1rem 0;
-    margin: 4rem 0 6rem 0;
-    background-color: #429bd6;
+    padding: 0.5rem 0;
+    margin: 3rem 0 5rem;
+    background-color: $midBlue;
     border: none;
   }
 
 
-  .label-plus-dropdown label {
-    padding-bottom: 0.5rem; 
-}
-
-.label-plus-dropdown select {
-    margin: 0.5rem 0 3rem;
-}
 
   @media screen and (min-width: 41.875em) {
 
-    .dropdowns label {
-      font-size: 1.2rem;
-    }
+    // .dropdowns label {
+    //   font-size: 1.2rem;
+    // }
     .dropdowns select {
-      padding: 1.4rem;
+      padding: 0.6rem;
     }
 
     .product-advisor-button {
-      margin: 3.5rem 0 7.125rem 0;
-      padding: 1.75rem 0;
+      margin: 2.5rem 0 5.125rem 0;
     }
 
   }
 
 
    @media screen and (min-width: 53.125em) {
-    // .product-advisor h2 {
-    //   font-size: 2.5rem;
-    // }
-
     .product-advisor p {
       font-size: 1.25rem;
       margin: 0;
       padding: 0.5rem 0 1.5rem 0;
-      color: #429bd6;
-      font-weight: 700;
+      color: $midBlue;
     }
 
-    .dropdowns label {
-      font-size: 1.2rem;
+    .dropdowns select {
+      // font-size: 1.2rem;
+      background: url(../images/down-arrow-blue.png) no-repeat right #bbbbbb;
+      background-size: 0.75rem 1.5rem;
+      background-position: right 0.5rem center;
     }
+
+    // .dropdowns label {
+    //   font-size: 1.2rem;
+    // }
 
     .products-container {
-      margin: 0 3rem;
+      margin: 0 1rem;
     }
 
     .dropdowns {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      gap: 1.2rem;
     }
   
     label:nth-of-type(1) {
@@ -221,7 +240,7 @@ h1,h2,h3,h4 {
   @media screen and (min-width: 78.125em) {
 
     .product-advisor h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     .dropdowns {
@@ -230,6 +249,11 @@ h1,h2,h3,h4 {
       flex-wrap: wrap;
       gap: 20px;
     }
+
+    // .dropdowns select {
+    //   padding: 1.5rem;
+    //   width: 100%
+    // }
   
     .label-plus-dropdown {
       flex: 1 0 15%; 
@@ -238,9 +262,9 @@ h1,h2,h3,h4 {
     }
   
 
-    select {
-      width: 100%; 
-    }
+    // select {
+    //   width: 100%; 
+    // }
 
     .dropdowns label {
       font-size: 1.2rem;
@@ -248,7 +272,7 @@ h1,h2,h3,h4 {
     }
 
     .product-advisor-button {
-      margin: 1.375rem 0 9.75rem 0;
+      margin: 2rem 0 5rem;
       font-size: 1.2rem;
     }
     
@@ -256,13 +280,13 @@ h1,h2,h3,h4 {
 
   /* 1920 pixels */ 
   @media screen and (min-width: 120em) {
-    .dropdowns label {
-      font-size: 1.2rem;
+    .product-advisor h2 {
+      font-size: 2.5rem;
     }
 
     .product-advisor-button {
-      margin: 1.375rem 0 9.75rem 0;
-      font-size: 2rem;
+      // margin: 3rem 0 6rem;
+      font-size: 1.4rem;
     }
   }
 
