@@ -33,20 +33,25 @@
 
 .spec button,
 .install button {
-    font-size: 1rem;
-    background: transparent;
-    margin-top: 1rem;
-}
+    background-color: #009DDC;
+        color: white;
+        border: 1px solid black;
+        margin: 0 0 20px 0;
+        padding: 0.6em 1.8em;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
 
-.spec button {
-    color: white;
-    border: 2px solid white;
-}
 
-.install button {
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
-}
+// .spec button {
+//     color: white;
+//     border: 2px solid white;
+// }
+
+// .install button {
+//     color: rgb(0, 0, 0);
+//     border: 2px solid rgb(0, 0, 0);
+// }
 
 .install {
     text-align: center;
@@ -80,10 +85,10 @@
     height: inherit; 
     }
 
-    .spec button,
-    .install button {
-        background-color: #429bd6;
-        border: none;
-        color: #fff;
-  }
+//     .spec button,
+//     .install button {
+//         background-color: #429bd6;
+//         border: none;
+//         color: #fff;
+//   }
 }
