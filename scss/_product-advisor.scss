@@ -138,12 +138,11 @@ $mediaBackground: #367d22;
     //   font-size: 1.2rem;
     // }
     .dropdowns select {
-      padding: 1rem;
+      padding: 0.6rem;
     }
 
     .product-advisor-button {
       margin: 3.5rem 0 5.125rem 0;
-      // padding: 1rem 0;
     }
 
   }
@@ -251,9 +250,10 @@ $mediaBackground: #367d22;
       gap: 20px;
     }
 
-    .dropdowns select {
-      padding: 1.5rem;
-    }
+    // .dropdowns select {
+    //   padding: 1.5rem;
+    //   width: 100%
+    // }
   
     .label-plus-dropdown {
       flex: 1 0 15%; 
@@ -262,9 +262,9 @@ $mediaBackground: #367d22;
     }
   
 
-    select {
-      width: 100%; 
-    }
+    // select {
+    //   width: 100%; 
+    // }
 
     .dropdowns label {
       font-size: 1.2rem;
