@@ -17,12 +17,33 @@
 //     background-image: url(../images/wave-white.png);
 // }
 
+.wave-blue {
+  position: relative;
+}
+
+.background-container{
+  position: absolute;
+  height: 160px;
+  width: 90%;
+  bottom: 0;
+}
+
+.background{
+  position: absolute;
+  width: 115%;
+  left: -9px;
+  bottom: -35px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/wave-blue-dark.png");
+  background-size: 160% 87%;
+}
 
 .customized {
   background-color: #fff;
   text-align: center;
   padding-top: 1rem;
-
+padding-bottom: 10rem;
   h2 {
     color: $gray-dark;
     margin: 0 4rem;
@@ -143,6 +164,15 @@
     padding-right: 3.5rem;
   }
 
+  
+  .background{
+   
+    width: 120%;
+    left: 0;
+    bottom: 0;
+    background-position: bottom left ;
+    background-size: 110% 70%;
+  }
 }
 
 
@@ -220,6 +250,14 @@
     grid-template-columns: repeat(4, 250px);
     padding: 1rem;
   }
+  .background{
+   
+    width: 112%;
+    left: 0;
+    bottom: 0;
+    background-position: bottom left ;
+    background-size: 102% 90%;
+  }
   
 }
 
@@ -265,6 +303,8 @@
 
   }
 
+
+
 }
 
 // styles for desktopLarge 1920 px
@@ -289,7 +329,7 @@
   .product-heading h3 {
    
     padding-right: 0;
-    font-size: 2rem;
+    
 
   }
   .customized-products-list {
@@ -299,6 +339,12 @@
   }
   .product-link{
     padding-right: 1rem;
-    font-size: 1.5rem;
+   
   }
+
+  .machine-01-heading,  .machine-03-heading {
+    a {
+    padding-top: 2.5rem;
+  }
+}
 }
