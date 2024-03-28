@@ -1,12 +1,13 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'typography' as *;
+
 @use 'spec-install' as *;
 @use 'header' as *;
 @use 'customized' as *;
+@use 'product-advisor' as *;
 @use 'about-us' as *;
 @use 'contact' as *;
+// @use 'media' as *;
 @use 'footer' as *;
-@use 'media' as *;
-@use 'product-advisor' as *;
 @use 'signup' as *;
-@use 'typography' as *;
