@@ -3,11 +3,14 @@
 .signup {
     background-color: #BEDCEF;
     padding: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     p{
         font-size: 1.25em;
         color: #244A64;
-            margin-right: 1em;
+         margin-right: 1em;
         }
     }
 
@@ -21,7 +24,7 @@
 .email{ 
     padding: 0.5em 5em 0.5em 0.5em;
     border-style:none;
-    margin-bottom: 0em;
+    margin-bottom: 0.1em;
 
 }
 
