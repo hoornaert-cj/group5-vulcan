@@ -250,6 +250,10 @@ $mediaBackground: #367d22;
       flex-wrap: wrap;
       gap: 20px;
     }
+
+    .dropdowns select {
+      padding: 1.5rem;
+    }
   
     .label-plus-dropdown {
       flex: 1 0 15%; 
