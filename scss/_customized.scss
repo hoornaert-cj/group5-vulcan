@@ -1,0 +1,350 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+
+
+// .background-container{
+//   content: "";
+//     position: absolute;
+//     left: 0px;
+//     top: 0px;
+//     right: 0;
+//     z-index: 10;
+//     height: 200px;
+//     background-size: 160% 80%;
+//     background-repeat: no-repeat;
+//     background-image: url(../images/wave-white.png);
+// }
+
+.wave-blue {
+  position: relative;
+}
+
+.background-container{
+  position: absolute;
+  height: 160px;
+  width: 90%;
+  bottom: 0;
+}
+
+.background{
+  position: absolute;
+  width: 115%;
+  left: -9px;
+  bottom: -35px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/wave-blue-dark.png");
+  background-size: 160% 87%;
+}
+
+.customized {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 1rem;
+padding-bottom: 10rem;
+  h2 {
+    color: $gray-dark;
+    margin: 0 4rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $gray-darkest;
+    margin: 0 1rem;
+    padding: .5rem 1rem;
+
+    font-size: 0.8rem;
+  }
+}
+
+.customized-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.products-machines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  width: 50%;
+  padding-left: 2rem;
+
+  &>img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.product-heading {
+
+  width: 50%;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.product1,
+.product2,
+.product3 {
+  border-bottom: 1px solid $gray-lightest;
+}
+
+.product-heading h3 {
+  font-size: 1.25rem;
+  color: $gray-dark;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-right: 3rem;
+}
+
+.product-link {
+  display: none;
+
+}
+
+// styles for phone portrait 420px
+@media (min-width: 26.25em) {
+
+  .customized {
+    h2 {
+      padding: 0 4rem;
+    }
+  }
+
+  .image-container {
+    width: 60%;
+
+
+  }
+
+  .product-heading {
+    width: 40%;
+
+    padding-left: 1.5rem;
+  }
+
+  .product-heading h3 {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+
+
+
+// styles for phone landscape 670px
+@media (min-width: 26.25em) {
+  .customized {
+    p {
+      padding: 1rem 4rem 1.5rem 4rem;
+    }
+  }
+
+  .image-container {
+    width: 60%;
+    padding-left: 2.5rem;
+
+  }
+
+  .product-heading {
+
+    width: 40%;
+    padding-left: 2rem;
+  }
+
+  .product-heading h3 {
+
+    padding-right: 3.5rem;
+  }
+
+  
+  .background{
+   
+    width: 120%;
+    left: 0;
+    bottom: 0;
+    background-position: bottom left ;
+    background-size: 110% 70%;
+  }
+}
+
+
+// for tablet portrait 850px
+@media (min-width: 53.125em) {
+  .customized {
+
+    h2 {
+      color: $blue-dark;
+      font-weight: 700;
+      font-size: 1.75rem;
+    }
+
+    p {
+      color: $gray-darkest;
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+  }
+
+  .product-heading h3 {
+    color: $blue-light;
+    
+    font-size: 1.75rem;
+
+  }
+  .customized-products-list {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem 2rem 2rem 1rem;
+  }
+
+  .products-machines {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .image-container {
+    width: 70%;
+    padding-left: 0;
+
+  }
+  .product-heading {
+    width: 50%;
+    text-align: center;
+    margin-right: 6rem;
+
+  }
+
+  .product-link {
+    display: block;
+    color: $gray-dark;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding-top: 1rem;
+  }
+
+  .product1,
+  .product2,
+  .product3 {
+    border-bottom: none;
+  }
+  .machine-01-heading a {
+    padding-top: 1.5rem;
+  }
+}
+
+// styles for tabletLandscape 1024 px
+@media (min-width : 64em){
+
+  .customized-products-list {
+    grid-template-columns: repeat(4, 250px);
+    padding: 1rem;
+  }
+  .background{
+   
+    width: 112%;
+    left: 0;
+    bottom: 0;
+    background-position: bottom left ;
+    background-size: 102% 90%;
+  }
+  
+}
+
+// styles for  desktopMedium 1251 px
+
+@media (min-width : 78.188em){
+  .customized {
+
+    h2 {
+      
+      font-size: 2rem;
+      padding-top: 1.5rem;
+    }
+
+    p {
+    
+      font-size: 1.25rem;
+      padding: 1.25rem 6rem 2rem 6rem;
+     
+    }
+  }
+
+  .product-heading h3 {
+   
+    
+    font-size: 1.75rem;
+
+  }
+  .customized-products-list {
+    
+    grid-template-columns: repeat(4, 300px);
+  
+  }
+  .image-container {
+    width: 80%;
+    padding-left: 0;
+
+  }
+  .product-heading {
+    width: 50%;
+    text-align: center;
+    margin-right: 6rem;
+
+  }
+
+
+
+}
+
+// styles for desktopLarge 1920 px
+
+@media (min-width : 120em){
+  .customized {
+
+    h2 {
+      
+      font-size: 2rem;
+      padding-top: 1.5rem;
+    }
+
+    p {
+    
+      font-size: 1.25rem;
+      padding: 1.25rem 6rem 2rem 6rem;
+      margin: 0 20rem;
+    }
+  }
+
+  .product-heading h3 {
+   
+    padding-right: 0;
+    
+
+  }
+  .customized-products-list {
+    
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+  .product-link{
+    padding-right: 1rem;
+   
+  }
+
+  .machine-01-heading,  .machine-03-heading {
+    a {
+    padding-top: 2.5rem;
+  }
+}
+}
