@@ -1,0 +1,40 @@
+.spec-and-install {
+  background-image: url(/images/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  color: #009DDC;
+}
+.spec-and-install h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 10vw;
+  color: #504f4f;
+}
+.spec-and-install button {
+  background-color: #009DDC;
+  color: white;
+  border: 1px solid black;
+  margin: 0 0 20px 0;
+  padding: 0.6em 1.8em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.wave-image-container {
+  overflow-x: hidden;
+  height: 80px;
+}
+
+.wave-image {
+  position: absolute;
+  width: 200vw;
+  height: 80px;
+  bottom: -1rem;
+  left: -1rem;
+  right: 0;
+  max-width: none;
+}
+
+/*# sourceMappingURL=contact.css.map */
