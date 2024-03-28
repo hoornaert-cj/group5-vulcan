@@ -1,3 +1,6 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -16,13 +19,13 @@ h1,h2,h3,h4 {
         margin: 0;
         padding: 0;
         font-size: 2rem;
-        padding-top: 4rem;
+        padding-top: 2rem;
+        letter-spacing: -0.125rem;
         text-transform: uppercase;
-        margin-bottom: 2rem;
     }
 
     p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 500;
         text-align: center;
         padding: 1.25rem 0 2.375rem 0;
@@ -57,7 +60,7 @@ h1,h2,h3,h4 {
   
   .dropdowns label {
     margin-left: 0;
-    font-size: 1.4375rem;
+    font-size: 1rem;
     font-weight: 700;
   }
 
@@ -68,8 +71,8 @@ h1,h2,h3,h4 {
     font-weight: 700;
     width: 100%;
     max-width: 100%;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
     box-sizing: border-box; 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -93,11 +96,11 @@ h1,h2,h3,h4 {
   .product-advisor-button {
     color: #ffffff;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     width: 100%; 
     padding: 1rem 0;
-    margin: 1.5rem 0 6.125rem 0;
+    margin: 4rem 0 6rem 0;
     background-color: #429bd6;
     border: none;
   }
@@ -108,36 +111,41 @@ h1,h2,h3,h4 {
 }
 
 .label-plus-dropdown select {
-    margin: 1.625rem 0 3em 0;
+    margin: 0.5rem 0 3rem;
 }
 
   @media screen and (min-width: 41.875em) {
 
     .dropdowns label {
-      font-size: 1.375rem;
+      font-size: 1.2rem;
     }
     .dropdowns select {
-      font-size: 1.2rem;
-      padding: 1.2rem;
+      padding: 1.4rem;
     }
+
+    .product-advisor-button {
+      margin: 3.5rem 0 7.125rem 0;
+      padding: 1.75rem 0;
+    }
+
   }
 
 
    @media screen and (min-width: 53.125em) {
     // .product-advisor h2 {
-    //   font-size: 2.8125rem;
+    //   font-size: 2.5rem;
     // }
 
     .product-advisor p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       margin: 0;
-      padding:1rem;
+      padding: 0.5rem 0 1.5rem 0;
       color: #429bd6;
       font-weight: 700;
     }
 
     .dropdowns label {
-      font-size: 1.375rem;
+      font-size: 1.2rem;
     }
 
     .products-container {
@@ -212,9 +220,9 @@ h1,h2,h3,h4 {
   /* 1250pixels */
   @media screen and (min-width: 78.125em) {
 
-    // .product-advisor h2 {
-    //   font-size: 2rem;
-    // }
+    .product-advisor h2 {
+      font-size: 2.5rem;
+    }
 
     .dropdowns {
       display: flex;
@@ -249,12 +257,12 @@ h1,h2,h3,h4 {
   /* 1920 pixels */ 
   @media screen and (min-width: 120em) {
     .dropdowns label {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
 
     .product-advisor-button {
       margin: 1.375rem 0 9.75rem 0;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
