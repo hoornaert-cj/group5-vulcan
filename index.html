@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vulcan</title>
     <!-- added the Google fonts shown in font-info.pdf--will need to be added to scss later -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;400i;500;700&display=swap">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./fontello-e9efcaa2/css/fontello.css">
+    <link rel="stylesheet" href="scss/footer.css">
+    <link rel="stylesheet" href="scss/signup.css">
 
       
 </head>
@@ -85,7 +90,14 @@
         <!-- media content goes here -->
             <iframe src="https://player.vimeo.com/video/183929811" title="Vulcan Industries" allowfullscreen height="200" width="400"></iframe>
 </section>
+    </section>
 
+    <section class="signup">
+        <p>Stay in the know. Sign up for our newsletter.</p>
+        <form>
+            <input type="email" class="email" placeholder="Enter your email">
+            <input type="submit" class="submit" value="Submit">
+        </form>
     </section>
 
     <section class="spec-and-install">
@@ -109,12 +121,13 @@
     <footer>
         <img id="footer-logo" src="images/logo-white-vulcan.svg" alt="Vulcan Logo" />
     <ul>
-        <li><a href="#"><i class="icon icon-facebook-circled">&#xf30d;</i></a></li>
-        <li><a href="#"><i class="icon icon-linkedin-circled">&#xf319;</i></a></li>
-        <li><a href="#"><i class="icon icon-phone-circled">&#xe801;</i>+1 712-642-2755</a>
+        <div class="url-menu">
+        <li><a href="#"><i class="icon-facebook-circled">&#xf30d;</i></a></li>
+        <li><a href="#"><i class="icon-linkedin-circled">&#xf319;</i></a></li>
+        <li><a href="#"><i class="icon-phone-circled">&#xe801;</i>+1 712-642-2755</a>
     </li>
-        <li><a href="#"><i class="icon icon-mail-circled">&#xe800;</i>Contact Us</a></li>
-     </ul>
+        <li><a href="#"><i class="icon-mail-circled">&#xe800;</i>Contact Us</a></li>
+     </ul></div>
         <p>Copyright 2024. All rights reserved</p>
     </footer>
 </body>
