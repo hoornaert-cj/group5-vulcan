@@ -1,0 +1,40 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.signup {
+    background-color: #BEDCEF;
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    p{
+        font-size: 1.25em;
+        color: #244A64;
+         margin-right: 1em;
+        }
+    }
+
+    .form{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            padding-top: 2em;
+        }
+    
+.email{ 
+    padding: 0.5em 5em 0.5em 0.5em;
+    border-style:none;
+    margin-bottom: 0.1em;
+
+}
+
+.submit{
+    text-transform: uppercase;
+    background-color: #429BD6;
+    color: white;
+    border-style: none;
+    padding: 0.5em 1.8em 0.5em 1.8em;
+    font-weight: bold;
+    margin: 0 0.2em;
+}
