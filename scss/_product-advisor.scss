@@ -72,7 +72,8 @@ h1,h2,h3,h4 {
     width: 100%;
     max-width: 100%;
     padding: 1.2rem;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
+    margin: 0.25rem;
     box-sizing: border-box; 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -100,19 +101,16 @@ h1,h2,h3,h4 {
     text-transform: uppercase;
     width: 100%; 
     padding: 1rem 0;
-    margin: 4rem 0 6rem 0;
+    margin: 4rem 0;
     background-color: #429bd6;
     border: none;
   }
 
 
-  .label-plus-dropdown label {
-    padding-bottom: 0.5rem; 
-}
+//   .label-plus-dropdown label {
+//     padding-bottom: 0.5rem; 
+// }
 
-.label-plus-dropdown select {
-    margin: 0.5rem 0 3rem;
-}
 
   @media screen and (min-width: 41.875em) {
 
@@ -120,7 +118,7 @@ h1,h2,h3,h4 {
       font-size: 1.2rem;
     }
     .dropdowns select {
-      padding: 1.4rem;
+      padding: 1rem;
     }
 
     .product-advisor-button {
@@ -144,18 +142,25 @@ h1,h2,h3,h4 {
       font-weight: 700;
     }
 
+    .dropdowns select {
+      font-size: 1.2rem;
+      background: url(../images/down-arrow-blue.png) no-repeat right #bbbbbb;
+      background-size: 0.75rem 1.5rem;
+      background-position: right 0.5rem center;
+    }
+
     .dropdowns label {
       font-size: 1.2rem;
     }
 
     .products-container {
-      margin: 0 3rem;
+      margin: 0 1rem;
     }
 
     .dropdowns {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+      gap: 1.2rem;
     }
   
     label:nth-of-type(1) {
@@ -248,7 +253,7 @@ h1,h2,h3,h4 {
     }
 
     .product-advisor-button {
-      margin: 1.375rem 0 9.75rem 0;
+      margin: 3rem 0 6rem;
       font-size: 1.2rem;
     }
     
@@ -261,7 +266,7 @@ h1,h2,h3,h4 {
     }
 
     .product-advisor-button {
-      margin: 1.375rem 0 9.75rem 0;
+      // margin: 3rem 0 6rem;
       font-size: 2rem;
     }
   }
