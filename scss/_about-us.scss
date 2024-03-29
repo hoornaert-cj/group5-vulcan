@@ -1,0 +1,130 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'typography' as *;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.about-us {
+  background-image: url('../images/bg-section-about-us.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-us h2 {
+  color: $white;
+  margin: 0 auto;
+  padding: 8rem 1rem 0;
+  font-size: 1.5rem;
+  max-width: 79%;
+  text-transform: uppercase;
+}
+
+.about-us p {
+  color: $white;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  padding: 3.5rem 1rem 5rem;
+  font-weight: $w500;
+  max-width: 80%;
+}
+
+.about-us button {
+  font-size: 1rem;
+  font-weight: $w700;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 53.125em) {
+  .about-us h2 {
+    padding: 15rem 0 0;
+    font-size: 2rem;
+    max-width: 75%;
+  }
+
+  .about-us p {
+    font-size: 1.4rem;
+    max-width: 55%;
+  }
+
+  .about-us button {
+    font-size: 1.2rem;
+    margin-bottom: 11.5rem;
+    padding: 0.625rem 1rem;
+  }
+}
+
+@media (min-width: 78.125em) {
+  .about-us h2 {
+    padding: 12.25rem 3rem 1rem;
+    font-size: 2.75rem;
+    max-width: 85%;
+  }
+
+  .about-us p {
+    font-size: 2rem;
+    padding: 2.5rem 6em 10rem;
+    max-width: 90%;
+  }
+
+  .about-us button {
+    font-size: 1.75rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media (min-width: 120em) {
+  .about-us h2 {
+    padding: 15.8125rem 5rem 8rem;
+    font-size: 3rem;
+    max-width: 65%;
+  }
+
+  .about-us p {
+    font-size: 1.5rem;
+    padding: 1rem 5rem 10rem;
+    max-width: 60%;
+  }
+
+  .about-us button {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    margin-bottom: 17rem;
+  }
+  .about-us button:hover {
+  background: $midBlue;
+    transition: 0.4s ease;
+  }
+}
+
+@media (min-width: 160em) {
+  .about-us h2 {
+    font-size: 4rem;
+    max-width: 55%;
+  }
+
+  .about-us p {
+    font-size: 1.5rem;
+    padding: 1rem 5rem 10rem;
+    max-width: 45%;
+  }
+
+  .about-us button {
+    padding: 1rem 4rem;
+  }
+}

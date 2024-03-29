@@ -1,0 +1,30 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.spec-and-install {
+    background-image: url(/images/map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 0;
+    padding-bottom: 40rem;
+    color: #009DDC;
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0 10vw;
+        color: #504f4f;
+    }
+    button {
+        background-color: #009DDC;
+        color: white;
+        border: 1px solid black;
+        margin: 0 0 20px 0;
+        padding: 0.6em 1.8em;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
+}
+
+

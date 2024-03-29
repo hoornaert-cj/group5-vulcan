@@ -1,0 +1,37 @@
+@use "sass:math";
+
+$line-height: 1.5;
+
+$lightBlue: #bddbee;
+$midBlue: #429bd6;
+$darkBlue: #154a66;
+
+// can be removed? 
+$blue-dark: #085074;
+$blue-light:#198fca;
+
+$white: #FFFFFF;
+$darkWhite: #edeeee;
+$gray-lightest: #BABABA;
+$gray-light: #737373;
+$gray-mid: #616161;
+$gray-dark: #504F4F; 
+$gray-darkest: #1F1F1F;
+$mediaBackground: #367d22;
+
+
+
+// font weights
+$w400: 400;
+$w500: 500;
+ $w700: 700;
+
+$line-height: 1.5;
+
+// Media Query Breakpoints
+// $desktopLarge: em(1920);
+// $desktopMedium: em(1251);
+// $tabletLandscape: em(1024);
+// $tabletPortrait: 53.125em;
+// $phoneLandscape: em(670);
+// $phonePortrait: em(420);
