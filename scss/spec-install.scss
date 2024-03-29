@@ -6,7 +6,6 @@
 .spec-and-install {
     display: flex;
     flex-direction: column;
-    // height: 20.875rem;
     width: 100%
 }
 
@@ -17,7 +16,7 @@
 
 .spec {
     order: 1;
-    background-color: #154a66;
+    background-color: $darkBlue;
 }
 
 .spec h2, .install h2 {
@@ -38,7 +37,7 @@
 }
 
 .install h2 {
-    color: #504F4F;
+    color: $gray-mid;
     padding: 0 10vw;
     margin: 8rem 10% 0 10%;
 }
@@ -49,20 +48,20 @@
     margin: 0 0 1.25rem 0;
     padding: 0.6rem 1rem;
     font-size: 1rem;
-    color: #fff;
+    color: $white;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
       }
 
       .spec button {
-        border: 1px solid #fff;
+        border: 1px solid $white;
         margin: 1rem auto 7rem auto;
       }
 
       .install button {
-        border: 1px solid #504F4F;
-        color: #504F4F;
+        border: 1px solid $gray-dark;
+        color: $gray-dark;
         margin: 0.25rem auto 8rem auto;
       }
 
@@ -145,7 +144,7 @@
 
     .spec button,
     .install button {
-        background-color: #009DDC;
+        background-color: $midBlue;
         color: #fff;
         border: none;
         padding: 1rem 1rem;
