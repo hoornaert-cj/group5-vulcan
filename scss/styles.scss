@@ -1,12 +1,11 @@
 @use 'variables' as *;
-@use 'spec-install' as *;
 
-@use 'spec-install' as *;
 @use 'header' as *;
 @use 'customized' as *;
 @use 'product-advisor' as *;
 @use 'about-us' as *;
-@use 'contact' as *;
+// @use 'contact' as *;
 @use 'media' as *;
+@use 'spec-install' as *;
 @use 'footer' as *;
 @use 'signup' as *;

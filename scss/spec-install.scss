@@ -1,12 +1,12 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-/* For mobile devices */
+
 .spec-and-install {
     display: flex;
     flex-direction: column;
-  
-
+    // height: 20.875rem;
+    width: 100%
 }
 
 .spec,
@@ -16,43 +16,55 @@
 
 .spec {
     order: 1;
-}
-
-.spec {
     background-color: #154a66;
-    padding-bottom: 8rem;
 }
 
 .spec h2, .install h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.75rem;
     margin: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .spec h2 {
-    font-size: 2rem;
     color: #ffffff;
+    margin: 5rem 20% 2rem 20%;
 }
 
 .install h2 {
-    font-size: 2rem;
-    color: #000;
+    color: #504F4F;
+    padding: 0 10vw;
+    margin: 8rem 10% 0 10%;
 }
 
 .spec button,
 .install button {
+    background-color: transparent;
+    margin: 0 0 1.25rem 0;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
-    background: transparent;
-    margin-top: 1rem;
-}
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+      }
 
-.spec button {
-    color: white;
-    border: 2px solid white;
-}
+      .spec button {
+        border: 1px solid #fff;
+        margin: 1rem auto 7rem auto;
+      }
 
-.install button {
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
-}
+      .install button {
+        border: 1px solid #504F4F;
+        color: #504F4F;
+        margin: 0.25rem auto 8rem auto;
+      }
+
 
 .install {
     text-align: center;
@@ -89,7 +101,6 @@
 
 @media (min-width:  41.875em) {
     .wave-image{
-
         width: 111%;
         left: 0;
         bottom: 0;
@@ -98,22 +109,24 @@
     }
 }
 
-/* For tablets and larger screens */
 @media (min-width: 53.125em) {
     .spec-and-install {
       flex-direction: row;
+    //   height: 26.875rem;
     }
 
   
     .spec {
       width: 50%;
-      padding: 20px;
+    //   padding: 20px;
       margin-bottom: 0;
+      height: 26.875rem;
+      height: inherit; 
     }
   
     .install {
     width: 50%;
-    height: 300px; 
+    // height: 300px; 
     margin-left: auto; 
     order: 1;
     background-size: cover;
@@ -121,21 +134,53 @@
     height: inherit; 
     }
 
+    .spec h2, .install h2 {
+        font-size: 2.5rem;
+    }
+
+    .spec h2 {
+        margin: 8rem 25% 0 25%;
+    }
+
     .spec button,
     .install button {
-        background-color: #429bd6;
-        border: none;
+        background-color: #009DDC;
         color: #fff;
-  }
+        border: none;
+        padding: 1rem 1rem;
+}
 }
 
-@media (min-width : 64em){
-.wave-image{
-   
-    width: 111%;
-    left: 0;
-    bottom: 0;
-    background-position: bottom left ;
-    background-size: 102% 90%;
-  }
+@media (min-width: 78.1875em) {
+    .spec-and-install {
+    // height: 34.375rem;
+    }
+
+    .spec {
+        padding: 0;
+    }
+
+    .spec h2, .install h2 {
+        font-size: 3rem;
+    }
+
+    .spec h2 {
+        margin: 12rem 25% 0 25%
+    }
+
+    .install h2 {
+        margin: 10rem 25% 0 0%;
+    }
+
+    .spec button, .install button {
+        padding: 1rem 1.5rem;
+    }
+
+    .spec button {
+        margin: 4rem auto 7rem auto;
+      }
+
+      .install button {
+        margin: 2rem 3rem 0;
+      }
 }
