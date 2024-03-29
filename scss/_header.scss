@@ -145,6 +145,7 @@ li {
 .hero {
     .hero-text {
         margin-bottom: 8rem;
+        padding-bottom: 2rem;
         h1 {
             @include font-style(700);
             font-size: 1.5rem;
@@ -168,15 +169,27 @@ li {
     }
 }
 
-.white-wave {
-    display: block;
+.header {
     position: relative;
-    height: 100%;
-    width: 120%;
-    bottom: -6px;
 }
 
+.white-wave-container{
+    height: 160px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+}
 
+.White-wave {
+    position: absolute;
+    width: 120%;
+    left: -25px;
+    bottom: -155px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/wave-white.png);
+    background-size: 180% 90%;
+}
 // Media Queries
 
 @media(min-width:420px) {
@@ -193,6 +206,13 @@ li {
         }
     }
 
+    .White-wave{
+        width: 111%;
+        left: 0;
+        bottom: -130px;
+        background-position: bottom left;
+        background-size: 120% 60%;
+    }
 }
 
 @media(min-width:850px) {
@@ -291,7 +311,7 @@ li {
 
 }
 
-@media(min-width:1090px) {
+@media(min-width:1024px) {
     .hero {
         .hero-text {
 
@@ -325,6 +345,14 @@ li {
     }
     .header-desktop {
         justify-content: space-evenly;
+    }
+
+    .White-wave{
+        width: 111%;
+        left: 0;
+        bottom: -130px;
+        background-position: bottom left ;
+        background-size: 102% 90%;
     }
 }
 

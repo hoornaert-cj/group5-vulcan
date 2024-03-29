@@ -17,15 +17,15 @@
   bottom: 0;
 }
 
-.background{
+.background {
   position: absolute;
-  width: 115%;
-  left: -9px;
-  bottom: -35px;
+  width: 120%;
+  left: -25px;
+  bottom: -20px;
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url("../images/wave-blue-dark.png");
-  background-size: 160% 87%;
+  background-image: url(../images/wave-blue-dark.png);
+  background-size: 180% 90%;
 }
 
 .customized {
@@ -129,7 +129,7 @@ padding-bottom: 10rem;
 
 
 // styles for phone landscape 670px
-@media (min-width: 26.25em) {
+@media (min-width:  41.875em) {
   .customized {
     p {
       padding: 1rem 4rem 1.5rem 4rem;

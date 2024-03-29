@@ -5,6 +5,8 @@
 .spec-and-install {
     display: flex;
     flex-direction: column;
+  
+
 }
 
 .spec,
@@ -18,6 +20,7 @@
 
 .spec {
     background-color: #154a66;
+    padding-bottom: 8rem;
 }
 
 .spec h2, .install h2 {
@@ -60,6 +63,41 @@
     height: 100%;
 }
 
+
+.light-blue-wave{
+    position: relative;
+    
+}
+
+.wave-image-container{
+    position: absolute;
+    height: 160px;
+    width: 90%;
+    bottom: 0;
+}
+
+.wave-image{
+    position: absolute;
+    width: 120%;
+    left: -25px;
+    bottom: -20px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/wave-blue-light.png);
+    background-size: 180% 90%;
+}
+
+@media (min-width:  41.875em) {
+    .wave-image{
+
+        width: 111%;
+        left: 0;
+        bottom: 0;
+        background-position: bottom left ;
+        background-size: 110% 70%;
+    }
+}
+
 /* For tablets and larger screens */
 @media (min-width: 53.125em) {
     .spec-and-install {
@@ -88,5 +126,16 @@
         background-color: #429bd6;
         border: none;
         color: #fff;
+  }
+}
+
+@media (min-width : 64em){
+.wave-image{
+   
+    width: 111%;
+    left: 0;
+    bottom: 0;
+    background-position: bottom left ;
+    background-size: 102% 90%;
   }
 }
