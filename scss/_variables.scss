@@ -1,14 +1,15 @@
 @use "sass:math";
 
-$font-body: "Roboto", Arial, Helvetica, Verdana, sans-serif;
-$font-heading: "Roboto Condensed", Arial, Helvetica, Verdana, sans-serif; 
-$font-icon: "fontello", Arial, Helvetica, Verdana, sans-serif;
-
 $line-height: 1.5;
 
 $lightBlue: #bddbee;
 $midBlue: #429bd6;
 $darkBlue: #154a66;
+
+// can be removed? 
+$blue-dark: #085074;
+$blue-light:#198fca;
+
 $white: #FFFFFF;
 $darkWhite: #edeeee;
 $gray-lightest: #BABABA;
@@ -17,11 +18,8 @@ $gray-mid: #616161;
 $gray-dark: #424242;
 $gray-darkest: #1F1F1F;
 $mediaBackground: #367d22;
-$blue-dark: #085074;
-$blue-light:#198fca;
-$gray-lightest: #BABABA;
-$gray-dark: #424242;
-$gray-darkest: #1F1F1F;
+
+
 
 // font weights
 $w400: 400;
